@@ -1,1 +1,1 @@
-# XML Tachnologies for Semantic Web labs @FMI / 2018-2019 /
+# XML Tachnologies for Semantic Web labs @FMI /2018-2019/
