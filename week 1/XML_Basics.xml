@@ -1,0 +1,57 @@
+<!-- XML Document Declaration -->
+<!-- XML1.0, UTF-8 encoding, no DTD -->
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!-- COMPANY is the root element of the document. It is declared with default namespace -->
+<COMPANY xmlns="http://company.com/companyInfo">
+    <name>XML Tech</name> <!-- This is PCDATA element -->
+
+    <!-- EMPLOYEELIST is declared with predefined default namespace and two new namespaces: emp and sec.
+        These namespaces are valid only for the hierarchy of EMPLOYEELIST element -->
+    <employeeList xmlns="http://employees.com/list"
+                  xmlns:emp="http://employees.com/emp"
+                  xmlns:sec="http://sectors.com/sec">
+
+        <!-- EMPLOYEE is element with structured content (it contains other elements) -->      
+        <employee emp:employeeID='E00001'> <!-- EMPID is attriute of EMPLOYEE element -->
+            <emp:image emp:source="img/employees/Devs/JohnSmith.jpg"/> <!-- This is empty element -->
+            <emp:name>John Smith</emp:name>
+            <sec:name>Devs</sec:name>
+            <emp:hire-date>25 May 2015</emp:hire-date>
+            <!-- FAVPROGRAMMERQUOTE is element with CDATA content -->
+            <emp:favProgrammerQuote>
+                <![CDATA[
+                    while(noSuccess){
+                        tryAgain();
+                        if(Dead)
+                            break;
+                    }
+                ]]>
+            </emp:favProgrammerQuote>
+        </employee> 
+        <employee employeeID='E00002'>
+            <emp:image source="img/employees/Administration/MichleJonson.jpg"/>
+            <emp:name>Michle Jonson</emp:name>
+            <sec:name>Administration</sec:name>
+            <emp:hire-date>15 Oct 2005</emp:hire-date>
+        </employee>   
+    </employeeList>
+
+    <careers>
+        <job id="1">
+            <position>XML &amp; HTML developer</position> <!-- & is special character. That's why it is used &amp; instead of it -->
+            <status>Open</status>
+            <modified>Wed, 17 Oct 2018</modified>
+            <salary>BGN 1500</salary>
+        </job>
+    </careers>
+
+    <contact>
+        <person>
+            <first_name>Nathan</first_name>
+            <last_name>Clemons</last_name>
+        </person>
+        <email>nathan@xmldevs.com</email>
+        <phone>0888-888-888</phone>
+    </contact>
+</COMPANY>
