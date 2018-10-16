@@ -51,10 +51,10 @@
 </pre>
  
 <h4>Задача 3: По дадената по-долу схема съставете XML файл</h4>
-<img src="https://github.com/ngadzheva/XML-labs/tree/master/week%201/exercises/images/xmlSchema.png"/>
+<img src="https://github.com/ngadzheva/XML-labs/blob/master/week%201/exercises/images/xmlSchema.png"/>
 
 <h4>Задача 4: Използвайки CDATA секции, съставете XML файл, структуриращ информацията (относно логическите оператори в Excel), дадена в таблицата по-долу:</h4>
-<img src="https://github.com/ngadzheva/XML-labs/tree/master/week%201/exercises/images/cdatasections.png"/>
+<img src="https://github.com/ngadzheva/XML-labs/blob/master/week%201/exercises/images/cdatasections.png"/>
 <b><i>Упътване:</i></b>
 
 ```
