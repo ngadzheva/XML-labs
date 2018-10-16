@@ -1,19 +1,19 @@
 <!-- Header -->
 <header> 
-  <h1><b>Създаване на XML и пространство от имена</b></h1>
+  <h1><b>Създаване на XML документ и пространство от имена</b></h1>
 </header>
 
 <!-- Content -->
 ## Цели на упражнението:
 		
 ```
-1. Да се упражнят правилата за добре оформен xml    
-2. Редактиране на xml                               
-3. Създаване на xml                                 
+1. Да се упражнят правилата за добре оформен XML    
+2. Редактиране на XML                               
+3. Създаване на XML                                 
 4. Използване на CDATA секции                      
 5. Използване на encoding                           
 6. Използване на пространство от имена             
-7. Структуриране на информация в xml документ       
+7. Структуриране на информация в XML документ       
 
 ```
 
@@ -51,10 +51,10 @@
 </pre>
  
 <h4>Задача 3: По дадената по-долу схема съставете XML файл</h4>
-<img src="https://github.com/ngadzheva/XML-labs/blob/master/week1/exercises/images/xmlSchema.png"/>
+<img src="https://github.com/ngadzheva/XML-labs/tree/master/week%201/exercises/images/xmlSchema.png"/>
 
 <h4>Задача 4: Използвайки CDATA секции, съставете XML файл, структуриращ информацията (относно логическите оператори в Excel), дадена в таблицата по-долу:</h4>
-<img src="https://github.com/ngadzheva/XML-labs/blob/master/week1/exercises/images/cdatasections.png"/>
+<img src="https://github.com/ngadzheva/XML-labs/tree/master/week%201/exercises/images/cdatasections.png"/>
 <b><i>Упътване:</i></b>
 
 ```
