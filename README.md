@@ -13,3 +13,24 @@
   <li>Cascading Style Sheets (<b>CSS</b>)</li>
   <li>Resource Description Framework (<b>RDF</b>), RDF Schema (<b>RDFS</b>) и Ontology Web Language (<b>OWL</b>)</li>
 </ol>
+
+## Tools
+
+<ol>
+  <li> NotePad++ </li>
+  <li> Visual Studio Code </li>
+  <li> EditiX </li>
+  <li> NotePad </li>
+  <li> NetBeans </li>
+  <li> IntelliSense </li>
+  <li> Mozilla Firefox </li>
+  <li> Google Chrome </li>
+  <li> Edge </li>
+  <li> Opera </li>
+  <li> Internet Explorer </li>
+  <li> <a href="https://www.xmlvalidation.com/">XML Validator</a> </li>
+  <li> <a href="https://validator.w3.org/#validate_by_upload+with_options">W3 XML Validator</a> </li>
+  <li> <a href="http://xmlvalidator.new-studio.org/">XML Validator Online</a> </li>
+  <li> <a href="http://videlibri.sourceforge.net/cgi-bin/xidelcgi">XPATH и XQUERY Online Tester</a> </li>
+  <li> <a href="https://www.w3.org/RDF/Validator/">W3 RDF Validator</a> </li>
+</ol>
