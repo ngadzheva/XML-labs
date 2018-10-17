@@ -1,0 +1,150 @@
+ <?xml version="1.0" encoding="UTF-8"?>                                                  
+
+    <Cinema name="Cinema City Paradise">                                                                  
+	<Address>София, бул. Черни връх 100, в сградата на Paradise Center</Address>                          
+	<Telephones>                                                                                                
+		<Telephone> 02 903 74 74 </Telephone>                                                             
+		<Telephone>02 903 74 40 </Telephone>                                                              
+	</Telephones>                                                                                               
+
+	<Email>info.paradise@cinemacity.bg</Email>                                                            
+
+	<Info>
+		Cinema City Paradise е второто кино на веригата в София.                                              
+		Оборудвано е с последно поколение кинотехника, прожектори Christie и 7-канален дигитален съраунд звук.                
+		Киното разполага с 14 модерни зали, 8 от които са 3D, с общ капацитет от 2166 места. 
+		14 зали означават още по-голямо разнообразие на филми, на практика на всеки 10 минути започва филм.
+    </Info>
+
+	<Prices>                                                                                                 
+		<Monday>                                                                                             
+			<CinameHall type="Normal">                                                             
+				<Tickets>                                                                                    
+					<Ticket>                                                                                 
+						<Type>General Ticket</Type>                                                    
+						<Price>XX.XX</Price>                                                           
+					</Ticket>                                                                                
+
+					<Ticket>                                                                                 
+						<Type>Discount Ticket</Type>                                                   
+						<Price>XX.XX</Price>                                                           
+					</Ticket>                                                                                
+
+					<Ticket>                                                                                 
+						<Type>Premiere Ticket</Type>                                                   
+						<Price>XX.XX</Price>                                                           
+					</Ticket>                                                                                
+				</Tickets>                                                                                   
+			</CinameHall>                                                                                    
+
+			<CinameHall type="3D DIGITAL CINEMA">                                                  
+				<Tickets>                                                                                    
+					<Ticket>                                                                                 
+						<Type>General Ticket</Type>                                                    
+						<Price>XX.XX</Price>                                                           
+					</Ticket>                                                                                
+
+					<Ticket>                                                                                 
+						<Type>Discount Ticket</Type>                                                   
+						<Price>XX.XX</Price>                                                           
+					</Ticket>                                                                                
+
+					<Ticket>                                                                                 
+						<Type>Premiere Movie</Type>                                                    
+						<Price>XX.XX</Price>                                                           
+					</Ticket>                                                                                
+
+					<Ticket>                                                                                 
+						<Type>Premiere Animation</Type>                                                
+						<Price>XX.XX</Price>                                                           
+					</Ticket>                                                                                
+				</Tickets>                                                                                   
+			</CinameHall>                                                                                    
+
+			<CinameHall type="4DX 2D">                                                             
+				<Tickets>                                                                                    
+					<Ticket>                                                                                 
+						<Type>General Ticket</Type>                                                    
+						<Price>XX.XX</Price>                                                           
+					</Ticket>                                                                                
+
+					<Ticket>                                                                                 
+						<Type>Discount Ticket</Type>                                                   
+						<Price>XX.XX</Price>                                                           
+					</Ticket>                                                                                
+
+					<Ticket>                                                                                 
+						<Type>Premiere</Type>                                                          
+						<Price>XX.XX</Price>                                                           
+					</Ticket>                                                                                
+				</Tickets>                                                                                   
+			</CinameHall>                                                                                    
+
+			<CinameHall type="4DX 3D">                                                             
+				<Tickets>                                                                                    
+					<Ticket>                                                                                 
+						<Type>General Ticket</Type>                                                    
+						<Price>XX.XX</Price>                                                           
+					</Ticket>                                                                                
+
+					<Ticket>                                                                                 
+						<Type>Discount Ticket</Type>                                                   
+						<Price>XX.XX</Price>                                                           
+					</Ticket>                                                                                
+
+					<Ticket>                                                                                 
+						<Type>Premiere Movie</Type>                                                    
+						<Price>XX.XX</Price>                                                           
+					</Ticket>                                                                                
+
+					<Ticket>                                                                                 
+						<Type>Premiere Animation</Type>                                                
+						<Price>XX.XX</Price>                                                           
+					</Ticket>                                                                                
+				</Tickets>                                                                                   
+			</CinameHall>                                                                                    
+		</Monday>                                                                                            
+
+		<Tuesday>                                                                                            
+
+		.......................                                                                                    
+
+		</Tuesday>                                                                                           
+
+		.......................                                                                                    
+
+	</Prices>                                                                                                
+
+	<CinemaProjection>                                                                                       
+		<Title>XX</Title>                                                                              
+		<Projections>                                                                                        
+			<Projection>                                                                                     
+				<Date>XX.XX.XXXX</Date>                                                                
+				<Hours>                                                                                      
+					<Hour>XX:XX</Hour>                                                                 
+					<Hour>XX:XX</Hour>                                                                 
+
+					..........                                                                                     
+
+				</Hours>                                                                                     
+			</Projection>                                                                                    
+
+			<Projection>                                                                                     
+				<Date>XX.XX.XXXX</Date>                                                                
+				<Hours>                                                                                      
+					<Hour>XX:XX</Hour>                                                                 
+					<Hour>XX:XX</Hour>                                                                 
+
+					..........                                                                                     
+
+				</Hours>                                                                                     
+			</Projection>                                                                                    
+
+			.............                                                                                          
+
+		</Projections>                                                                                           
+	</CinemaProjection>                                                                                      
+
+	...................                                                                                            
+
+</Cinema>

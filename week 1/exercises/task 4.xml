@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<table>
+    <tablerow>
+        <tablecolumn>Condition</tablecolumn>
+        <tablecolumn>Operator</tablecolumn>
+        <tablecolumn>Formula Example</tablecolumn>
+        <tablecolumn>Description</tablecolumn>
+    </tablerow>
+
+    <tablerow>
+        <tablecolumn>Equal to</tablecolumn>
+        <tablecolumn>=</tablecolumn>
+        <tablecolumn>=A1=B1</tablecolumn>
+        <tablecolumn>The formula returns TRUE if a value in cell A1 is equal to the values in cell B1; FALSE otherwise.</tablecolumn>
+    </tablerow>
+
+    <tablerow>
+        <tablecolumn>Not equal to</tablecolumn>
+        <tablecolumn><![CDATA[<>]]></tablecolumn>
+        <tablecolumn><![CDATA[=A1<>B1]]></tablecolumn>
+        <tablecolumn>The formula returns TRUE if a value in cell A1 is not equal to the value in cell B1; FALSE otherwise.</tablecolumn>
+    </tablerow>
+
+    <tablerow>
+        <tablecolumn>Greater than</tablecolumn>
+        <tablecolumn><![CDATA[>]]></tablecolumn>
+        <tablecolumn><![CDATA[=A1>B1]]></tablecolumn>
+        <tablecolumn>The formula returns TRUE if a value in cell A1 is greater than a value in cell B1; otherwise it returns FALSE.</tablecolumn>
+    </tablerow>
+
+    <tablerow>
+        <tablecolumn>Less than</tablecolumn>
+        <tablecolumn><![CDATA[<]]></tablecolumn>
+        <tablecolumn><![CDATA[=A1<B1]]></tablecolumn>
+        <tablecolumn>The formula returns TRUE if a value in cell A1 is less than in cell B1; FALSE otherwise.</tablecolumn>
+    </tablerow>
+
+    <tablerow>
+        <tablecolumn>Greater than or equal to</tablecolumn>
+        <tablecolumn><![CDATA[>=]]></tablecolumn>
+        <tablecolumn><![CDATA[=A1>=B1]]></tablecolumn>
+        <tablecolumn>The formula returns TRUE if a value in cell A1 is greater than or equal to the values in cell B1; FALSE otherwise.</tablecolumn>
+    </tablerow>
+
+    <tablerow>
+        <tablecolumn>Less than or equal to</tablecolumn>
+        <tablecolumn><![CDATA[<=]]></tablecolumn>
+        <tablecolumn><![CDATA[=A1<=B1]]></tablecolumn>
+        <tablecolumn>The formula returns TRUE if a value in cell A1 is less than or equal to the values in cell B1; FALSE otherwise.</tablecolumn>
+    </tablerow>
+</table>
