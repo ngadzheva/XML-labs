@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Declaration of element with nested elements -->
+<!ELEMENT COMPANY (name, employeeList, careers, contact)>
+
+<!-- Declaration of default namespace -->
+<!ATTLIST COMPANY xmlns CDATA #FIXED "http://company.com/companyInfo">
+
+<!-- Declaration of element  with PCDATA content -->
+<!ELEMENT name (#PCDATA)>
+
+<!-- Declaration of element with nested element. 
+    The element EMPLOYEE can appear 1 or more times inside EMPLOYEELIST element -->
+<!ELEMENT employeeList (employee+)>
+
+<!-- Declaration of EMP & SEC namespace -->
+<!ATTLIST employeeList xmlns CDATA #FIXED "http://employees.com/list"
+                       xmlns:emp CDATA #FIXED "http://employees.com/emp"
+                       xmlns:sec CDATA #FIXED "http://sections.com/sec">
+<!ELEMENT employee (emp:img?, emp:name, sec:name?, emp:hire-date?, emp:favProgrammerQuote*)>
+
+<!-- Declaration of ID attribute which must appear in the XML document -->
+<!ATTLIST employee empID ID #REQUIRED>
+
+<!-- Declaration of empty element -->
+<!ELEMENT emp:img EMPTY>
+
+<!-- Declaration of attribute which is entity -->
+<!ATTLIST emp:img src ENTITY #REQUIRED>
+<!ELEMENT emp:name (#PCDATA)>
+<!ELEMENT sec:name (#PCDATA)>
+<!ELEMENT emp:hire-date (#PCDATA)>
+<!ELEMENT emp:favProgrammerQuote (#PCDATA)>
+
+<!-- Declaration of element with neseted elements.
+    The element JOB can appear zero or more times inside CAREERS element -->
+<!ELEMENT careers (job*)>
+
+<!-- The element SALARY can appear zero or one time inside JOB element -->
+<!ELEMENT job (position, status, modified, salary?)>
+<!ATTLIST job id ID #REQUIRED>
+<!ELEMENT position (#PCDATA)>
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT modified (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+<!ELEMENT contact (person, email*, phone*)>
+<!ELEMENT person (first_name, last_name)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT last_name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+
+<!-- Declaration of notation -->
+<!NOTATION jpg PUBLIC "jpg viewer">

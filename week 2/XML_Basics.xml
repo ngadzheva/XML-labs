@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- DTD combined declaration -->
+<!DOCTYPE COMPANY SYSTEM "DTD_Basics.dtd" [
+    <!-- Declaration of entity -->
+    <!ENTITY JohnSmith SYSTEM "img/employees/Devs/JohnSmith.jpg" NDATA jpg>
+    <!ENTITY MichleJonson SYSTEM "img/employees/Administration/MichleJonson.jpg" NDATA jpg>
+]>
+
+<!-- COMPANY is the root element of the document. It is declared with default namespace -->
+<COMPANY xmlns="http://company.com/companyInfo">
+    <name>XML Tech</name> <!-- This is PCDATA element -->
+
+    <!-- EMPLOYEELIST is declared with predefined default namespace and two new namespaces: emp and sec.
+        These namespaces are valid only for the hierarchy of EMPLOYEELIST element -->
+    <employeeList xmlns="http://employees.com/list"
+                  xmlns:emp="http://employees.com/emp"
+                  xmlns:sec="http://sections.com/sec">
+
+        <!-- EMPLOYEE is element with structured content (it contains other elements) -->      
+        <employee empID='E00001'> <!-- EMPID is attriute of EMPLOYEE element -->
+            <emp:img src="JohnSmith"/> <!-- This is empty element -->
+            <emp:name>John Smith</emp:name>
+            <sec:name>Devs</sec:name>
+            <emp:hire-date>25 May 2015</emp:hire-date>
+            <!-- FAVPROGRAMMERQUOTE is element with CDATA content -->
+            <emp:favProgrammerQuote>
+                <![CDATA[
+                    while(noSuccess){
+                        tryAgain();
+                        if(Dead)
+                            break;
+                    }
+                ]]>
+            </emp:favProgrammerQuote>
+        </employee> 
+        <employee empID='E00002'>
+            <emp:img src="MichleJonson"/>
+            <emp:name>Michle Jonson</emp:name>
+            <sec:name>Administration</sec:name>
+            <emp:hire-date>15 Oct 2005</emp:hire-date>
+        </employee>   
+    </employeeList>
+
+    <careers>
+        <job id="J00001">
+            <position>XML &amp; HTML developer</position> <!-- & is special character. That's why it is used &amp; instead of it -->
+            <status>Open</status>
+            <modified>Wed, 17 Oct 2018</modified>
+            <salary>BGN 1500</salary>
+        </job>
+    </careers>
+
+    <contact>
+        <person>
+            <first_name>Nathan</first_name>
+            <last_name>Clemons</last_name>
+        </person>
+        <email>nathan@xmldevs.com</email>
+        <phone>0888-888-888</phone>
+    </contact>
+</COMPANY>
