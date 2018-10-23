@@ -417,7 +417,7 @@ by double forward slashes (//): field 1//field 2//field 3//field 4
 </Course_Catalog>
 ```
 
-<img src="https://github.com/ngadzheva/XML-labs/blob/master/week%202/exercises/images/rcourseCatalogSchema.png"/>
+<img src="https://github.com/ngadzheva/XML-labs/blob/master/week%202/exercises/images/courseCatalogSchema.png"/>
 
 <h4>Задача 8: Използвайки параметрични ENTITY и условни секции, декларирайте по-долу описаните 2 варианта за елемента channel в DTD
 документa от <i>задача 6</i>. Включете/Изключете всеки един от двата варианта и направете съответните промени в XML файла</h4>
