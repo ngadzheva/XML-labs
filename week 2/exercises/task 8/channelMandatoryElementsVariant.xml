@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE channel SYSTEM "channel.dtd">
+
+<channel>
+    <item>
+        <title>RSS</title>
+        <link>https://rss.com/index.html</link>
+    </item>
+    <title>Title of the channel</title>
+    <link>https://rss.com</link>
+    <description>Description of the channel</description>
+</channel>

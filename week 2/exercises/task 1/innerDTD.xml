@@ -1,0 +1,39 @@
+<?xml version="1.0"?>	
+
+<!DOCTYPE shiporder[	
+	<!ELEMENT shiporder (orderperson,shipto,item+)>	
+	<!ATTLIST shiporder orderid CDATA #REQUIRED>	
+	<!ELEMENT orderperson (#PCDATA)>	
+	<!ELEMENT shipto (name,address,city,country)>	
+	<!ELEMENT name (#PCDATA)>	
+	<!ELEMENT address (#PCDATA)>	
+	<!ELEMENT city (#PCDATA)>	
+	<!ELEMENT country (#PCDATA)>	
+	<!ELEMENT item (title,note?,quantity,price)>	
+	<!ELEMENT title (#PCDATA)>	
+	<!ELEMENT note (#PCDATA)>	
+	<!ELEMENT quantity (#PCDATA)>	
+	<!ELEMENT price (#PCDATA)>	
+]>	
+
+<shiporder orderid="889923">	
+   <orderperson>John Smith</orderperson>	
+   <shipto>	
+   	   <name>Ola Nordmann</name>	
+   	   <address>Langgt 23</address>	
+   	   <city>4000 Stavanger</city>	
+   	   <country>Norway</country>	
+   </shipto>	
+   <item>	
+   	   <title>Empire Burlesque</title>	
+   	   <note>Special Edi/on</note>	
+   	   <quantity>1</quantity>	
+   	   <price>10.90</price>	
+   </item>	
+   <item>	
+   	   <title>Hide your heart</title>	
+   	   <quantity>1</quantity>	
+   	   <price>9.90</price>	
+   </item>	
+</shiporder>	
+

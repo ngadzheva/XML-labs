@@ -1,0 +1,25 @@
+<?xml version="1.0"?> 
+
+<!DOCTYPE games SYSTEM "games.dtd">
+
+<games>	
+    <game score="1-1">	
+        <home-team>Roma</home-team>	
+        <ex-team>Lazio</ex-team>	
+        <scores>	
+            <score me="15">	
+                <player>Klose</player>	
+            </score>	
+            <score me="85"	type="penalty">	
+                <player>Tox</player>	
+            </score>	
+        </scores>	
+        <yellows>	
+           <player>Tox</player>	
+           <player>Hernanes</player>	
+        </yellows>	
+        <reds>	
+           <player>Kjaer</player>	
+        </reds>	
+    </game>	
+</games>

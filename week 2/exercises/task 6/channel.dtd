@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 1. -->
+<!NOTATION JPG SYSTEM "image/jpeg"> 
+<!NOTATION GIF PUBLIC "GIF 1.0"> 
+<!NOTATION PNG PUBLIC "PNG 1.0" "image/png">
+<!ENTITY xmlJPGAddress SYSTEM "https://eathenasolutions.com/wp-content/uploads/Fotolia_12413408_XS.jpg" NDATA JPG> 
+<!ENTITY xmlPNGAddress SYSTEM "https://eathenasolutions.com/wp-content/uploads/Fotolia_12413408_XS.jpg" NDATA PNG> 
+<!ENTITY W3GIFAddress PUBLIC "-//W3C//GIF logo//EN" "https://www.w3.org/2008/site/images/logo-w3c-screen-lg" NDATA GIF> 
+
+<!-- 2. -->
+<!ENTITY goto "Go to our page">
+
+<!-- 3. -->
+<!ENTITY % titleElement "title">
+
+<!-- 4. -->
+<!ENTITY % channelElements "(item+, %titleElement;, link, language?, image*, description)" > 
+
+<!ELEMENT channel %channelElements;>
+<!ATTLIST channel version CDATA "0.0">
+<!ELEMENT item ((%titleElement;, link, description?) | (description?, %titleElement;, link) | (description?, link, %titleElement;) | (%titleElement;, description?, link) | (link, %titleElement;, description?) | (link, description?, %titleElement;) )>
+<!ELEMENT %titleElement; (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT image (%titleElement; | link | url)*>
+<!ATTLIST image src ENTITY #REQUIRED>
+<!ELEMENT url (#PCDATA)>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE channel SYSTEM "channel.dtd" [
+    <!ENTITY % variantAllMandatory "IGNORE"> 
+    <!ENTITY % variantAllElements "INCLUDE"> 
+]>
+
+<channel>
+    <item>
+        <title>RSS</title>
+        <link>https://rss.com/index.html</link>
+    </item>
+
+    <title>Title of the channel</title>
+    <link>https://rss.com</link>
+    <language>EN</language>
+
+    <image src="xmlJPGAddress">
+        <title>RSS Schema</title>
+        <link>&goto;</link>
+        <url>https://rss.com/images/rss.jpg</url>
+    </image>
+
+    <image src="xmlPNGAddress">
+        <title>RSS Schema</title>
+        <link>&goto;</link>
+        <url>https://rss.com/images/rss.png</url>
+    </image>
+
+    <description>Description of the channel</description>
+</channel>
+   

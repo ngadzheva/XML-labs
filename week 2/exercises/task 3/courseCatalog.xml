@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Course_Catalog SYSTEM "courseCatalog.dtd">
+
+<Course_Catalog> 
+    <Department Code="CS"> 
+        <Title>Computer Science</Title> 
+        <Chair> 
+            <Professor> 
+                <First_Name>Jennifer</First_Name> 
+                <Last_Name>Widom</Last_Name> 
+            </Professor> 
+        </Chair> 
+
+        <Course Number="CS106A" Enrollment="1070"> 
+            <Title>Programming Methodology</Title> 
+            <Description>Introduction to the engineering of computer applications emphasizing modern software engineering principles.</Description> 
+            <Instructors> 
+                <Lecturer> 
+                    <First_Name>Jerry</First_Name> 
+                    <Middle_Initial>R.</Middle_Initial> 
+                    <Last_Name>Cain</Last_Name> 
+                </Lecturer>
+                <Professor> 
+                    <First_Name>Eric</First_Name> 
+                    <Last_Name>Roberts</Last_Name> 
+                </Professor> 
+            </Instructors> 
+        </Course> 
+    </Department> 
+</Course_Catalog>
