@@ -1,0 +1,38 @@
+1. Select the names of all employees
+    a) COMPANY/employeeList/employee/name/text()
+    b) //employee/name/text()
+    c) /child::COMPANY/child::employeeList/child::employee/child::name/child::text()
+    d) //descendant-or-self::node()/child::employee/child::name/child::text()
+
+2. Select the id number of the second employee
+    a) COMPANY/employeeList/employee[position() = 2]/@empID
+    b) //employee[position() = 2]/@empID
+    c) //employee[2]/@empID
+    d) /child::COMPANY/child::employeeList/child::employee[position() = 2]/attribute::empID
+    e) //descendant-or-self::node()/child::employee[position() = 2]/attribute::empID
+
+3. Select all employees with name John
+    a) //employee/name[contains(text(),'John')]
+    b) //descendant-or-self::node()/child::employee[contains(text(),'John')]
+
+4. Select the status of all job elements, converting it to UPPER CASE
+    //status/upper-case(text())
+
+5. Select the employee name, whose hire date is 25
+    //employee[hire-date[starts-with(text(),'25')]]/name
+
+6. Select all elements with attribute 'src'
+    a) //@src
+    b) //descendant-or-self::node()/attribute::src
+
+7. Select the number of all employees
+    //employeeList/count(employee)
+
+8. Select all elements which are after the element sector with content 'Devs'
+    //sector[text() = 'Devs']/following-sibling::*
+
+9. Select all elements which are befor the element salary with content 'BGN 1500'
+    //salary[text() = 'BGN 1500']/preceding-sibling::*
+
+10. Select all employees on odd position
+    //employee[position() mod 2 = 0]

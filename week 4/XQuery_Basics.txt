@@ -1,0 +1,11 @@
+1. Select the name of the employees of sector 'Devs'
+    for $emp in document("XML_Basics.xml")//employee
+    where $emp/sector/text() = "Devs"
+    return $emp/name/text()
+
+2. Select the name of the employees of sector 'Devs'. Order the result in reverse order
+    for $emp in document("XML_Basics.xml")//employee
+    let $sec := $emp/sector
+    where $sec/text() = "Devs"
+    order by $emp/name  descending
+    return $emp/name/text()
