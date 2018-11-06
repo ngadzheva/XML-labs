@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- Definition of the root element of the schema -->
+<!-- Declaration of the root element of the schema -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://company.com/companyInfo" xmlns="http://company.com/companyInfo" elementFormDefault="qualified">
     <!-- Declaration of the root element of the schema instance (the XML document) -->
     <xs:element name="COMPANY" type="companyInfo">
