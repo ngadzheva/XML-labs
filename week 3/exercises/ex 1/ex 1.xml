@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<collection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ex 1.xsd">
+    <description>description........</description> 
+    <recipe> 
+        <title>Collection 1</title> 
+        <ingredient name="all"> 
+            <preparation> 
+            <step>Step 1</step> 
+            <step>Step 2</step> 
+            <step>Step 3</step> 
+            </preparation> 
+        </ingredient> 
+        <preparation> 
+            <step>Stage 1</step> 
+            <step>Stage 2</step> 
+            <step>Stage 3</step> 
+        </preparation> 
+        <comment>No comments....</comment> 
+        <nutrition fat="12%" protein="10%" calories="123" carbohydrates="N.A."/> 
+    </recipe> 
+</collection>

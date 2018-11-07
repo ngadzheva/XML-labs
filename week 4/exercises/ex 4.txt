@@ -1,0 +1,87 @@
+1. Select all values of the track element, which is subelement of 
+    the tracklist element, whis has num attribute equal to 1
+    a) Order the result alphabetically
+    b) Order the result alphabetically in reverse Order
+
+    doc("catalog.xml")//tracklist[@num="1"]/track
+
+    for $x in doc("catalog.xml")/catalog/cd/tracklist
+    where $x/@num="1"
+    return $x/track/text()
+
+    for $x in doc("catalog.xml")/catalog/cd
+    let $t:=$x/tracklist
+    where $t/@num="1"
+    return $t/track
+
+    for $x in doc("catalog.xml")/catalog/cd/tracklist[@num="1"]/track
+    order by $x asceding/dsceding
+    return $x/text()
+
+
+2. 
+
+    element records {
+        for $o in doc("catalog.xml")/catalog/cd
+        return
+            element record {
+                attribute cd_ID {$o/@id}, attribute artist {$o/artist/text()}, 
+                element info { 
+                text { "Title:"}, text {$o/title/text()}, text { ", Year:"} ,text{$o/year/text()}, text { ", Track numbers:"}, text{count($o/tracklist/track)} 
+                } 
+            } 
+    }
+
+    for $o in doc("catalog.xml")/catalog
+    return
+        element records{ 
+            for $p in $o/cd
+            return
+                element record {
+                attribute cd_ID {$o/@id}, attribute artist {$o/artist/text()}, 
+                element info { 
+                    text { "Title:"}, text {$o/title/text()}, text { ", Year:"} ,text{$o/year/text()}, text { ", Track numbers:"}, text{count($o/tracklist/track)}
+                    } 
+                } 
+        }
+
+    for $p in ./catalog 
+    return 
+        element records { 
+            for $o in $p/cd 
+            return 
+                element record { 
+                    attribute cd_ID {$o/@id}, attribute artist {$o/artist}, 
+                    element info { 
+                        text { "Title:"}, text {$o/title/text()}, text { ", Year:"} ,text{$o/year/text()}, text { ", Track numbers:"}, text{count($o/tracklist/track)} 
+                    } 
+                } 
+        } 	
+
+
+    <records>
+        {
+            for $x in doc("catalog.xml")//cd
+            return 
+                <record cd_ID="{$x/@id}" artist="{$x/artist/text()}">
+                    <info>Title: {$x/title/text()}, Year: {$x/year/text()}, Track numbers: {count($x//track)}</info>
+                </record>
+        }
+    </records>
+    
+
+3. 
+    for $o in . 
+    return 
+        element tracks { 
+            for $p in $o/catalog/cd/tracklist/track/text() 
+            return element track {$p} 
+        }
+
+    <tracks>
+        {
+            for $x in doc("catalog.xml")/catalog/cd
+            return
+                <track>{$x//track/text()}</track>
+        }
+    </tracks>

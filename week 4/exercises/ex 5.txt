@@ -1,0 +1,44 @@
+1.  declare function local:trackElement($catalog as element()) as element()* { 
+        for $o in $catalog/cd/tracklist[@num = "1"]/track 
+        order by $o descending 
+        return $o 
+    }; 
+
+    { 
+        for $s in doc("mydoc.xml")/catalog return local:trackElement($s) 
+    } 
+
+2.  declare function local:trackElement($catalog as element()) as element()* { 
+        for $o in $catalog/cd 
+        return 
+        element record { 
+            attribute c {$o/@id}, attribute artist {$o/artist}, 
+            element info { 
+                text { "Title:"}, text {$o/title}, text { ", Year:"} ,text{$o/year}, text { ", Track numbers:"}, text{count($o/tracklist/track)} 
+            } 
+        } 
+    };
+
+    for $o in . 
+    return 
+    element records { 
+        {
+            for $s in doc("mydoc.xml")/catalog 
+            return local:trackElement($s) 
+        }
+    } 
+
+3.  declare function local:trackElement($catalog as element()) as element()* { 
+        for $p in $catalog/cd/tracklist/track/text() 
+        return element track {$p} 
+    }; 
+
+    for $o in . 
+    return 
+        element tracks 
+        { 
+            {
+                for $s in doc("mydoc.xml")/catalog 
+                return local:trackElement($s)
+            } 
+        } 

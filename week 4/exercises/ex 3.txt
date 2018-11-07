@@ -1,0 +1,53 @@
+1. Select the value of the tracklist / year element or its attribute
+
+    self::node()/descendant-or-self::node()/child::tracklist/attribute::num
+    //tracklist/@num
+    catalog/cd/year
+
+
+2. Select the attributes num and id of the elements tracklist and cd
+
+    //tracklist/@num
+    //cd/@id
+
+3. Select all track elements, which are before the track element with
+    content "Doschitay do sta (Countdown)"
+
+    catalog/cd/tracklist/track[text()="Doschitay do sta (Countdown)"]/preceding-sibling::*
+
+
+4. Select all track elements, which are after the track element with 
+    content "Doschitay do sta (Countdown)"
+
+    catalog/cd/tracklist/track[text()="Doschitay do sta (Countdown)"]/following-sibling::*
+
+
+5. Select all track elements, wich are after the track element with
+    content "Doschitay do sta (Countdown)" and has length "4:04"
+
+    catalog/cd/tracklist/track[text()="Doschitay do sta (Countdown)"]/following-sibling::track[@length="4:04"]
+
+
+6. Select all values of the subelements of all cd elements
+
+    catalog/cd/descendant::*
+
+
+7. Select the values of all elements, which have attribute with name id
+
+    //attribute::id
+    //@id
+
+
+8. Select the values of all elements, which have any attribute
+
+    //attribute::*
+    //@*
+
+
+9. Select the num attribute with max value
+
+    catalog/cd/tracklist[@num and count(self::"[xs:int(@num) < //@num]) = 0]/@num
+    catalog/cd/tracklist[@num=max(//*[@num!="]/number(@num))]/@num
+    catalog/cd/tracklist[@num=max(//*/@num)]/@num
+    max(//*/@num)

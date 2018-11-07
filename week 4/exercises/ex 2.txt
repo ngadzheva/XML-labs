@@ -1,0 +1,75 @@
+1. Select all track elements, which attribute length is equal to 4:04
+    and are included in the element cd, which has id equal to 8c0a600b
+
+    catalog/cd[@id="8c0a600b"]/tracklist/track[@length="4:04"]
+
+
+2. Select all track elements on odd/even positions 
+
+    catalog/cd/tracklist/track[position() mod 2 = 0]
+    catalog/cd/tracklist/track[position() mod 2 != 0]
+
+
+3. Select values of all track elements, which text length is greater than 35
+
+    catalog/cd/tracklist/track[string-length() > 35]
+
+
+4. Select the length of the text of all track elements, which text length is greater than 15
+
+    catalog/cd/tracklist/track[string-length() > 15]/string-length()
+
+
+5. Select the last track element of each cd
+
+    catalog/cd/tracklist/track[last()]
+
+
+6. Select the fifth track element of each cd
+
+    catalog/cd/tracklist/track[position() = 5]
+
+
+7. Select the number of track elements for each cd
+
+    catalog/cd/tracklist/count(track)
+
+
+8. Select all track elements, which value contains "Ya soshla s uma"
+
+    catalog/cd/tracklist/track[contains(text(), "Ya soshla s uma")]
+
+
+9. Select all track elements, which value starts with D
+
+    catalog/cd/tracklist/track[starts-with(text(), "D")]
+    catalog/cd/tracklist/track[matches(text(), "^D")]
+
+
+10. Select all track elements, which value ends with "sta"
+
+    catalog/cd/tracklist/track[matches(text(), "sta$")]
+    catalog/cd/tracklist/track[ends-with(text(), "sta")]
+
+
+11. Select the values of all track elements, outputted with upper case
+
+    catalog/cd/tracklist/track/upper-case(text())
+
+
+12. Select the values of the element year, which is subelement of the element cd, 
+    which contains sub-sub-element track with length=3:55 and has value "Robot(Robotronik)"
+
+    catalog/cd[tracklist/track[@length="3:55"and text()="Robot (Robotronik)"]]/year
+
+
+13.  Select the average track elements of all cd elements
+
+    sum(catalog/cd/tracklist/count(track)) div catalog/count(cd)
+    count(catalog/cd/tracklist/track) div catalog/count(cd)
+
+
+14. For every cd element select the value of its subelements title and year, following the sample
+    Title: title_value; Published year: year_value
+
+    catalog/cd/concat("Title: ", title/text(), "; Published year: ", year)
