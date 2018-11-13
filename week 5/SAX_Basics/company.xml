@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><COMPANY><name/><employeeList><employee empID="E00001"><img src="JohnSmith"/><name>John Smith</name><sector>Devs</sector><hire-date>25 May 2015</hire-date><favProgrammerQuote>&lt;![CDATA[
+                    while(noSuccess){
+                        tryAgain();
+                        if(Dead)
+                            break;
+                    }
+                ]]&gt;</favProgrammerQuote></employee></employeeList><careers><job id="J00001"/><position>XML &amp;amp; HTML developer</position><status>Open</status><modified>Wed, 17 Oct 2018</modified><salary>BGN 1500</salary></careers><contact><person><first_name>Nathan</first_name><last_name>Clemons</last_name></person><email>nathan@xmldevs.com</email><phone>0888-888-888</phone></contact></COMPANY>
