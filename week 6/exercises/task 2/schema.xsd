@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+   <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/> 
+   <xs:element name="book"> 
+       <xs:complexType> 
+           <xs:sequence> 
+               <xs:element ref="chapters"/> 
+           </xs:sequence> 
+       </xs:complexType> 
+   </xs:element> 
+   <xs:element name="chapters"> 
+       <xs:complexType> 
+           <xs:sequence> 
+               <xs:element maxOccurs="unbounded" ref="chapter"/> 
+           </xs:sequence> 
+       </xs:complexType> 
+   </xs:element> 
+   <xs:element name="chapter"> 
+       <xs:complexType> 
+           <xs:sequence> 
+               <xs:element ref="content"/> 
+           </xs:sequence> 
+           <xs:attribute ref="xlink:href" use="required"/> 
+           <xs:attribute ref="xlink:show" use="required"/> 
+           <xs:attribute ref="xlink:type" use="required"/> 
+       </xs:complexType> 
+   </xs:element> 
+   <xs:element name="content" type="xs:string"/> 
+</xs:schema>

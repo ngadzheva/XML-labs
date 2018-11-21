@@ -1,0 +1,22 @@
+<book xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd"> 
+   <chapters> 
+      <xi:include href="intro.xml" parse="xml"> 
+         <xi:fallback > 
+            <chapter> 
+               <content> 
+                  N.A. 
+               </content> 
+            </chapter> 
+         </xi:fallback> 
+      </xi:include> 
+      <xi:include href="chapter1.xml" parse="xml"> 
+         <xi:fallback > 
+            <chapter> 
+               <content> 
+                  N.A. 
+               </content> 
+            </chapter> 
+         </xi:fallback> 
+      </xi:include> 
+   </chapters> 
+</book>
