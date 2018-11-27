@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Processing instruction connecting the XML document with the XSL dosument -->
+<?xml-stylesheet type="text/xsl" href="XSLT_Basics.xsl"?>
+
+<COMPANY>
+    <name>XML Tech</name>
+
+    <employeeList>
+        <employee empID='E00001'> 
+            <img src="JohnSmith"/> 
+            <name>John Smith</name>
+            <sector>Devs</sector>
+            <hire-date>25 May 2015</hire-date>
+            <favProgrammerQuote>
+                <![CDATA[
+                    while(noSuccess){
+                        tryAgain();
+                        if(Dead)
+                            break;
+                    }
+                ]]>
+            </favProgrammerQuote>
+        </employee> 
+        <employee empID='E00002'>
+            <img src="MichleJonson" type="jpg"/>
+            <name>Michle Jonson</name>
+            <sector>Administration</sector>
+            <hire-date>15 Oct 2005</hire-date>
+        </employee>   
+    </employeeList>
+
+    <careers>
+        <job id="J00001">
+            <position>XML &amp; HTML developer</position> 
+            <status>Open</status>
+            <modified>Wed, 17 Oct 2018</modified>
+            <salary>BGN 1500</salary>
+        </job>
+    </careers>
+
+    <contact>
+        <person>
+            <first_name>Nathan</first_name>
+            <last_name>Clemons</last_name>
+        </person>
+        <email>nathan@xmldevs.com</email>
+        <phone>0888-888-888</phone>
+    </contact>
+</COMPANY>
