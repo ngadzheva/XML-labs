@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<?xml-stylesheet type="text/xsl" href="catalogDisplay.xsl"?>
+
+<catalog>
+   <cd category="Techno" id="8c0a600b">
+      <artist>TATU</artist>
+      <title>200 po vstrechnoy</title>
+      <year>2002</year>
+
+      <tracklist num="1">
+         <track length="4:04">Zachem ya? (Tell Me Why)</track>
+         <track length="3:34">Ya soshla s uma (Mad as Hell)</track>
+         <track length="4:40">Nas ne dogonyat (On The Run)</track>
+         <track length="4:39">Doschitay do sta (Countdown)</track>
+         <track length="3:21">30 minut (Another Minute)</track>
+         <track length="4:19">Ya tvoy vrag (Wake Up, Time To Die)</track>
+         <track length="4:20">Ya tvoya ne pervaya (First In First Out)</track>
+         <track length="3:55">Robot (Robotronik)</track>
+         <track length="4:04">Malchik-gay (Zoophilic Lolita)</track>
+         <track length="3:53">Nas ne dogonyat (HarDrum rmx)</track>
+         <track length="4:04">30 minut (HarDrum rmx)</track>
+      </tracklist>
+   </cd>
+
+   <cd category="Techno" id="cd100010">
+      <artist>Tatu</artist>
+      <title>Zvezdnaya seriya 2001</title>
+      <year>2001</year>
+      
+      <tracklist num="2">
+         <track length="4:04">Ya soshla s uma</track>
+         <track length="3:53">Robot</track>
+         <track length="4:08">Zachem ya?</track>
+         <track length="4:36">Doschitaj do sta</track>
+         <track length="4:17">Ya tvoj vrag</track>
+         <track length="4:38">Nas ne dogonyat</track>
+         <track length="3:18">Mal'chik-gej</track>
+         <track length="3:18">30 minut</track>
+         <track length="4:18">Ya ne tvoya pervaya</track>
+         <track length="3:50">Nas ne dogonyat (hardrum remix)</track>
+         <track length="4:04">30 minut (hardrum remix)</track>
+         <track length="4:03">Ya soshla s uma (dj ram remix)</track>
+         <track length="4:10">Ya soshla s uma (hardrum remix)</track>
+         <track length="3:37">Ya soshla s uma (dj ram breakbeat remix)</track>
+         <track length="7:00">Ya soshla s uma (S.Galoyan remix)</track>
+         <track length="5:36">Ya soshla s uma (Video)</track>
+      </tracklist>
+   </cd>
+</catalog>
