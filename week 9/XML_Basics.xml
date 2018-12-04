@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?xml-stylesheet type="text/css" href="CSS_Basics.css"?>
+
+<COMPANY>
+    <name>XML Tech</name> <!-- This is PCDATA element -->
+
+    <!-- EMPLOYEELIST is declared with predefined default namespace and two new namespaces: emp and sec.
+        These namespaces are valid only for the hierarchy of EMPLOYEELIST element -->
+    <employeeList>
+
+        <!-- EMPLOYEE is element with structured content (it contains other elements) -->      
+        <employee empID='E00001'> <!-- EMPID is attriute of EMPLOYEE element -->
+            <img src="JohnSmith"/> <!-- This is empty element -->
+            <name>John Smith</name>
+            <sector>Devs</sector>
+            <hire-date>25 May 2015</hire-date>
+            <!-- FAVPROGRAMMERQUOTE is element with CDATA content -->
+            <favProgrammerQuote>
+                <![CDATA[
+                    while(noSuccess){
+                        tryAgain();
+                        if(Dead)
+                            break;
+                    }
+                ]]>
+            </favProgrammerQuote>
+        </employee> 
+        <employee empID='E00002'>
+            <img src="MichleJonson" type="jpg"/>
+            <name>Michle Jonson</name>
+            <sector>Administration</sector>
+            <hire-date>15 Oct 2005</hire-date>
+        </employee>   
+    </employeeList>
+
+    <careers>
+        <job id="J00001">
+            <position>XML &amp; HTML developer</position> <!-- & is special character. That's why it is used &amp; instead of it -->
+            <status>Open</status>
+            <modified>Wed, 17 Oct 2018</modified>
+            <salary>BGN 1500</salary>
+        </job>
+    </careers>
+
+    <contact>
+        <person>
+            <first_name>Nathan</first_name>
+            <last_name>Clemons</last_name>
+        </person>
+        <email>nathan@xmldevs.com</email>
+        <phone>0888-888-888</phone>
+    </contact>
+</COMPANY>

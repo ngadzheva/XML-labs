@@ -1,0 +1,75 @@
+/* Tag selector */
+/* Defines the background color and the font family of the whole document */
+COMPANY {
+    background-color: rgb(125,157,181, 0.3);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Multiple tags selector */
+/* COMPANY > name selects the name tag which is direct children to the COMPANY tag */
+/* #empID selects element which has attribute, named empID */
+/* Defines the block model type and the position of the elements */
+COMPANY > name, 
+employee, #empID, sector, hire-date,
+contact, person, email, phone {
+    display: block;
+    position: relative;
+}
+
+/* Selects the name element which is first child of its parent */
+/* :first-child is pseudo class */
+/* Defines the margins, the font style and the border type of the element */
+name:first-child {
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Impact', sans-serif;
+    color: darkblue;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px dotted #2a3440;
+}
+
+employee , contact{
+    width: 30%;
+    margin: 2em auto;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* employee[empID="E00001"]  selects the employee element which has empID attribute which value is E00001 */
+/* [empID$="02"] selects the element whic has attribute empID which value ends with 02 */
+employee[empID="E00001"], [empID$="02"] {
+    border-left: 5px solid #2a3440;
+    border-right: 5px solid #2a3440;
+    background-color: #A7D0FF;
+}
+
+/* Selects all name elements which are children to employee elements */
+employee name {
+    font-size: 24px;
+    color: #53687A;
+}
+
+/* font-transform makes all letters upper case */
+sector {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+hire-date {
+    font-style: italic;
+    font-family: "Monotype Corsiva";
+}
+
+favProgrammerQuote, careers {
+    display: none;
+}
+
+person {
+    border-top: 1px dotted #2a3440;
+    padding-top: 15px;
+}
