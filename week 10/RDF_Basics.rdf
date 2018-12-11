@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<!-- Declaration of the root element with the namespace, specifying 
+    that elements with the rdf prefix are from the RDF namespace, and
+    the namespace, specifying that the elements with the company prefix
+    are from the namespace http://www.company.com -->
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:company="http://www.company.com">
+    <!-- This element contains the description of the resource identified by
+        the rdf:about attribute -->
+    <rdf:Description rdf:about="http://www.company.com/company">
+        <!-- The elements below are properties of the resource.
+            A resource is anything that can have a URI.
+            A property is a resource that has a name -->
+        <company:name>XML Texh</company:name> 
+        <!-- The properties below are defined as resources. -->
+        <company:employeeList rdf:resource="http://www.company.com/company/employeeList"/>
+        <company:careers rdf:resource="http://www.company.com/company/careers"/>
+        <company:contact rdf:resource="http://www.company.com/company/contact"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.company.com/company/employeeList">
+        <company:employee>
+            <!-- rdf:Bag element is used to describe a list of values
+                that do not have to be in a specific order.
+                i.e. John Smith and Michle Johnson are employees -->
+            <rdf:Bag>
+                <rdf:li>John Smith</rdf:li>
+                <rdf:li>Michle Johnson</rdf:li>
+            </rdf:Bag>
+        </company:employee>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.company.com/company/careers">
+        <company:job>
+            <!-- rdf:Seq element is used to describe an ordered list of values.
+                i.e XML and HTML developer and Web developer 
+                (EXACTLY IN THIS ORDER) are jobs -->
+            <rdf:Seq>
+                <rdf:li>XML and HTML developer</rdf:li>
+                <rdf:li>Web developer</rdf:li>
+            </rdf:Seq>
+        </company:job>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.company.com/company/contact">
+        <company:person>Nathan Clemons</company:person>
+        <company:contactInfo>
+            <!-- rdf:Alt element is used to describe a list of alternative values
+            i.e. contact info can be nathan@xmldevs.com OR 0888-888-888 -->
+            <rdf:Alt>
+                <rdf:li>nathan@xmldevs.com</rdf:li>
+                <rdf:li>0888-888-888</rdf:li>
+            </rdf:Alt>
+        </company:contactInfo>
+    </rdf:Description>
+</rdf:RDF>
