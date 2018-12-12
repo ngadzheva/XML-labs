@@ -12,7 +12,8 @@
 3. Дефиниране на CSS стилове върху различни медии (напр. принтер, екран, т.н.)
 4. Използване на няколко CSS дефиниции за един XML/HTML документ
 5. Вмъкване на CSS дефиниция в друга CSS дефиниция
-6. Използване на CSS селектори - прости селектори, контекстови селектори, селектори и класове, различни типове селектори - пряк наследник, "брат/сестра", за атрибути и т.н.
+6. Използване на CSS селектори - прости селектори, контекстови селектори, селектори и класове, различни типове 
+   селектори - пряк наследник, "брат/сестра", за атрибути и т.н.
 7. Асоцииране на даден CSS стил с част/и от XML/HTML документ, чрез използване на ID, CLASS, STYLE
 8. Групиране на CSS дефиниции
 9. Каскаден ред
@@ -26,8 +27,10 @@
 
 <pre>
 1. Включете трите дефиниции към вече създадения XML/HTML документ.
-2. Импортирайте две от дефинициите в третата и я приложете (третата дефиниция с импортираните други две) към вече създадения XML/HTML документ.
-3. Променете по различен начин един и същ стил в третата дефиниция и в импортираните дефиниции, за да видите коя промяна остава в сила.
+2. Импортирайте две от дефинициите в третата и я приложете (третата дефиниция с импортираните други две) към вече 
+   създадения XML/HTML документ.
+3. Променете по различен начин един и същ стил в третата дефиниция и в импортираните дефиниции, за да видите коя 
+   промяна остава в сила.
 </pre>
 
 CSS документ:
@@ -212,7 +215,8 @@ a:hover {
    <body bgcolor="#FFFF00" link="#00FF00"> 
       <p><font color="#008080" size="5" face="Arial"><b>Section 1</b></font></p> 
 
-      <table border="3" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="50%" id="AutoNumber1"> 
+      <table border="3" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" 
+	     width="50%" id="AutoNumber1"> 
          <tr> 
             <td width="50%" bgcolor="#00FF00" bordercolor="#FF0000" align="center">
                <b>Column 1 title</b>
@@ -237,7 +241,8 @@ a:hover {
          <b><font face="Arial" size="5" color="#008080">2</font></b>
       </p> 
 
-      <table border="3" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="50%" id="AutoNumber1"> 
+      <table border="3" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" 
+	     width="50%" id="AutoNumber1"> 
          <tr> 
             <td width="50%" bgcolor="#00FFFF" bordercolor="#FF0000" align="center">
                <b>Column 1 title</b>
@@ -582,26 +587,47 @@ table.blue{
    <body> 
       <h1>Brad Pitt</h1> 
       <div id="blockSection"> 
-         <img class="picture" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Angelina_Jolie_Brad_Pitt_Cannes.jpg/220px-Angelina_Jolie_Brad_Pitt_Cannes.jpg"> 
+         <img class="picture" 
+	      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Angelina_Jolie_Brad_Pitt_Cannes.jpg/220px-Angelina_Jolie_Brad_Pitt_Cannes.jpg"> 
          <img class="picture" src="https://i0.wp.com/eju.tv/wp-content/uploads/2011/10/brad_pitt.jpg"> 
       </div> 
       <div id="text"> 
          <p> 
-            <span class="boldAndUnderline">William Bradley Pitt (born December 18, 1963) is an American actor and producer.</span> As a public figure, Pitt has been cited as one of the most influential and powerful people in the American entertainment industry. 
+            <span class="boldAndUnderline">William Bradley Pitt (born December 18, 1963) is an American actor and 
+		producer.</span> As a public figure, Pitt has been cited as one of the most influential and powerful 
+		people in the American entertainment industry. 
          </p> 
 
          <p> 
-            <span class="boldAndUnderline">Pitt first gained recognition as a cowboy hitchhiker in the road movie Thelma & Louise (1991). His first leading roles in big-budget productions came with the drama films A River Runs Through It (1992) and Legends of the Fall (1994), and horror film Interview with the Vampire (1994). He gave critically acclaimed performances in the crime thriller Seven and the science fiction film 12 Monkeys (both 1995), the latter earning him a Golden Globe Award for Best Supporting Actor and an Academy Award nomination. Pitt starred in the cult film Fight Club (1999) and the heist film Ocean's Eleven (2001) and its sequels, Ocean's Twelve (2004) and Ocean's Thirteen (2007). His greatest commercial successes have been Troy (2004), Mr. & Mrs. Smith (2005), and World War Z (2013). Pitt received his second and third Academy Award nominations for his leading performances in The Curious Case of Benjamin Button (2008) and Moneyball (2011). He produced The Departed (2006) and 12 Years a Slave (2013), both of which won the Academy Award for Best Picture, and also The Tree of Life, Moneyball, and The Big Short (2015), all of which garnered Best Picture nominations. 
+            <span class="boldAndUnderline">Pitt first gained recognition as a cowboy hitchhiker in the road movie Thelma & Louise
+		(1991). His first leading roles in big-budget productions came with the drama films A River Runs Through It (1992) 
+		and Legends of the Fall (1994), and horror film Interview with the Vampire (1994). He gave critically acclaimed 	
+		performances in the crime thriller Seven and the science fiction film 12 Monkeys (both 1995), the latter earning him
+		a Golden Globe Award for Best Supporting Actor and an Academy Award nomination. Pitt starred in the cult film Fight 
+		Club (1999) and the heist film Ocean's Eleven (2001) and its sequels, Ocean's Twelve (2004) and Ocean's Thirteen (2007).
+		His greatest commercial successes have been Troy (2004), Mr. & Mrs. Smith (2005), and World War Z (2013). Pitt received
+		his second and third Academy Award nominations for his leading performances in The Curious Case of Benjamin Button(2008)
+		and Moneyball (2011). He produced The Departed (2006) and 12 Years a Slave (2013), both of which won the Academy Award
+		for Best Picture, and also The Tree of Life, Moneyball, and The Big Short (2015), all of which garnered Best Picture
+		nominations. 
          </p> 
       </div> 
        
       <div id="text"> 
          <p> 
-            <span class="boldAndUnderline">In the late 1980s and early 1990s</span>, Pitt was involved in successive relationships with several of his co-stars, including Robin Givens (Head of the Class), Jill Schoelen (Cutting Class), and Juliette Lewis (Too Young to Die? and Kalifornia). In addition, Pitt had a much-publicized romance and engagement to his Seven co-star, Gwyneth Paltrow, whom he dated from 1994 to 1997. 
+            <span class="boldAndUnderline">In the late 1980s and early 1990s</span>, Pitt was involved in successive relationships with
+		several of his co-stars, including Robin Givens (Head of the Class), Jill Schoelen (Cutting Class), and Juliette Lewis
+		(Too Young to Die? and Kalifornia). In addition, Pitt had a much-publicized romance and engagement to his Seven co-star,
+		Gwyneth Paltrow, whom he dated from 1994 to 1997. 
          </p> 
 
          <p> 
-            <span class="boldAndUnderline">Pitt met Friends actress Jennifer Aniston in 1998 and married her in a private wedding ceremony in Malibu on July 29, 2000. In January 2005, Pitt and Aniston announced they had decided to separate. Two months later, Aniston filed for divorce, citing irreconcilable differences. </span>Pitt and Aniston's divorce was finalized by the Los Angeles Superior Court on October 2, 2005. Despite media reports that Pitt and Aniston had an acrimonious relationship, Pitt said in a February 2009 interview that he and Aniston "check in with each other", adding that they were both big parts of each other's lives. 
+            <span class="boldAndUnderline">Pitt met Friends actress Jennifer Aniston in 1998 and married her in a private wedding
+		ceremony in Malibu on July 29, 2000. In January 2005, Pitt and Aniston announced they had decided to separate. Two
+		months later, Aniston filed for divorce, citing irreconcilable differences. </span>Pitt and Aniston's divorce was
+		finalized by the Los Angeles Superior Court on October 2, 2005. Despite media reports that Pitt and Aniston had an
+		acrimonious relationship, Pitt said in a February 2009 interview that he and Aniston "check in with each other", adding
+		that they were both big parts of each other's lives. 
          </p> 
       </div> 
    </body> 
