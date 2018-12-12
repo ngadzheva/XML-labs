@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+   <head> 
+      <title>Exercise 5</title> 
+      <link rel="stylesheet" href="styles.css" type="text/css"/> 
+   </head> 
+   <body> 
+      <h1>Brad Pitt</h1> 
+      <div id="blockSection"> 
+         <img class="picture" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Angelina_Jolie_Brad_Pitt_Cannes.jpg/220px-Angelina_Jolie_Brad_Pitt_Cannes.jpg"/> 
+         <img class="picture" src="https://i0.wp.com/eju.tv/wp-content/uploads/2011/10/brad_pitt.jpg"/> 
+      </div> 
+      <div id="text"> 
+         <p> 
+            <span class="boldAndUnderline">William Bradley Pitt (born December 18, 1963) is an American actor and producer.</span> As a public figure, Pitt has been cited as one of the most influential and powerful people in the American entertainment industry. 
+         </p> 
+
+         <p> 
+            <span class="boldAndUnderline">Pitt first gained recognition as a cowboy hitchhiker in the road movie Thelma and Louise (1991). His first leading roles in big-budget productions came with the drama films A River Runs Through It (1992) and Legends of the Fall (1994), and horror film Interview with the Vampire (1994). He gave critically acclaimed performances in the crime thriller Seven and the science fiction film 12 Monkeys (both 1995), the latter earning him a Golden Globe Award for Best Supporting Actor and an Academy Award nomination. Pitt starred in the cult film Fight Club (1999) and the heist film Ocean's Eleven (2001) and its sequels, Ocean's Twelve (2004) and Ocean's Thirteen (2007). His greatest commercial successes have been Troy (2004), Mr. and Mrs. Smith (2005), and World War Z (2013). Pitt received his second and third Academy Award nominations for his leading performances in The Curious Case of Benjamin Button (2008) and Moneyball (2011). He produced The Departed (2006) and 12 Years a Slave (2013), both of which won the Academy Award for Best Picture, and also The Tree of Life, Moneyball, and The Big Short (2015), all of which garnered Best Picture nominations. </span>
+         </p> 
+      </div> 
+       
+      <div id="text"> 
+         <p> 
+            <span class="boldAndUnderline">In the late 1980s and early 1990s</span>, Pitt was involved in successive relationships with several of his co-stars, including Robin Givens (Head of the Class), Jill Schoelen (Cutting Class), and Juliette Lewis (Too Young to Die? and Kalifornia). In addition, Pitt had a much-publicized romance and engagement to his Seven co-star, Gwyneth Paltrow, whom he dated from 1994 to 1997.
+         </p> 
+
+         <p> 
+            <span class="boldAndUnderline">Pitt met Friends actress Jennifer Aniston in 1998 and married her in a private wedding ceremony in Malibu on July 29, 2000. In January 2005, Pitt and Aniston announced they had decided to separate. Two months later, Aniston filed for divorce, citing irreconcilable differences. </span>Pitt and Aniston's divorce was finalized by the Los Angeles Superior Court on October 2, 2005. Despite media reports that Pitt and Aniston had an acrimonious relationship, Pitt said in a February 2009 interview that he and Aniston "check in with each other", adding that they were both big parts of each other's lives. 
+         </p> 
+      </div> 
+   </body> 
+</html>

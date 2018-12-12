@@ -1,0 +1,108 @@
+rss { 
+   display:table; 
+   font-family: Tahoma, Arial; 
+   font-size: 15px; 
+   background-color: white; 
+} 
+channel *{ 
+   display:block; 
+   background-color: white; 
+   color: black; 
+   font-size: 14px; 
+} 
+textinput *{ 
+   display:block; 
+   background-color: yellow; 
+   color: blue; 
+   font-size: 15px; 
+   text-indent: 20px; 
+} 
+textinput::before { 
+   display:block; 
+   text-indent: 20px; 
+   padding-bottom:5px; 
+   content: "Textinput section: "; 
+} 
+item { 
+   padding-top:10px; 
+   display:block; 
+} 
+item title { 
+   display:block; 
+   background-color: white; 
+   color: black; 
+   font-size: 12px; 
+   text-indent: 20px; 
+} 
+item description { 
+   display:block; 
+   background-color: white; 
+   color: black; 
+   font-size: 15px; 
+   text-indent: 20px; 
+   margin: 5px; 
+   padding: 5px; 
+} 
+item link { 
+   display:block; 
+   background-color: green; 
+   color: blue; 
+   margin: 5px; 
+   padding: 5px; 
+   font-size: 11px; 
+   text-indent: 20px; 
+} 
+@media screen and (min-width: 480px) { 
+   item title { 
+      display:block; 
+      background-color: yellow; 
+      color: black; 
+      font-size: 12px; 
+      text-indent: 20px; 
+   } 
+   item description { 
+      display:block; 
+      background-color: green; 
+      color: black; 
+      font-size: 15px; 
+      text-indent: 20px; 
+      margin: 5px; 
+      padding: 5px; 
+   } 
+   item link{ 
+      display:block; 
+      background-color: white; 
+      color: blue; 
+      margin: 5px; 
+      padding: 5px; 
+      font-size: 11px; 
+      text-indent: 20px; 
+   } 
+} 
+@media print { 
+   item title { 
+      display:block; 
+      background-color: pink; 
+      color: black; 
+      font-size: 12px; 
+      text-indent: 20px; 
+   } 
+   item description { 
+      display:block; 
+      background-color: purple; 
+      color: black; 
+      font-size: 15px; 
+      text-indent: 20px; 
+      margin: 5px; 
+      padding: 5px; 
+   } 
+   item link { 
+      display:block; 
+      background-color: orange; 
+      color: blue; 
+      margin: 5px; 
+      padding: 5px; 
+      font-size: 11px; 
+      text-indent: 20px; 
+   } 
+}

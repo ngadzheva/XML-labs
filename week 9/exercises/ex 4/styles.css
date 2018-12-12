@@ -1,0 +1,57 @@
+p:first-of-type { 
+   background: green; 
+   color:yellow; 
+} 
+
+.warning > *[lang^=en] { 
+   color: green; 
+} 
+
+*[lang^=en] { 
+   color: black; 
+} 
+
+.warning { 
+   color: red; 
+} 
+
+.warning > span:not([lang]) { 
+   background: yellow; 
+   color:blue; 
+} 
+
+#maincontent { 
+   border: 1px solid blue; 
+} 
+
+p+p+div { 
+   color: orange; 
+   text-transform: uppercase; 
+   text-indent: 20px 
+} 
+
+p ~ div { 
+color: red; 
+} 
+
+code + div { 
+   color: green; 
+} 
+
+div + p { 
+   color: blue; 
+} 
+
+div + p:first-letter { 
+   color: orange; 
+   font-size: 33px; 
+} 
+
+div + p::first-line { 
+   background-color: green; 
+   color: yellow; 
+} 
+
+body { 
+   color: brown; 
+}

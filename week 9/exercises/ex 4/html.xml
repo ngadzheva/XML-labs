@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+   <head> 
+      <title>Test file for sample 3</title> 
+      <link rel="stylesheet" href="styles.css" type="text/css"/> 
+   </head> 
+   <body> 
+      <p>Only in the first paragraph: a green backround and yellow color.</p> 
+      <p lang="en-us">A black paragraph when the lang attribute is available.</p> 
+      <p>A brown paragraph in the default case.</p> 
+      <p class="warning"> 
+         <span lang="en-us">A green span</span> in a red paragraph. 
+      </p> 
+      <p class="warning"> 
+         <span>A yellow background and blue color</span> in a red paragraph. 
+      </p> 
+      <p id="maincontent" lang="en-gb"> 
+         <span class="warning">A red span</span> in a green paragraph. 
+      </p> 
+      <div>This is not red, but orange.</div> 
+      <p> 
+         Here is a blue paragraph. Here is a blue paragraph. Here is a blue paragraph. Here is a blue paragraph.<br/> 
+         Here is a blue paragraph. Here is a blue paragraph. Here is a blue paragraph. Here is a blue paragraph.<br/> 
+         Here is a blue paragraph. Here is a blue paragraph. Here is a blue paragraph. Here is a blue paragraph. 
+      </p> 
+      <span>Here is some span with css definition in the default case.</span> 
+      <div>And here is a red div!</div> 
+      <code>More code... with css definition in the default case.</code> 
+      <div>And this is a green div!</div> 
+   </body> 
+</html>
