@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cd="http://www.myshop.bg/cd#">
+    <rdf:Description rdf:about="http://www.myshop.bg/cd/Soulsville#">
+        <cd:artist rdf:resource="http://www.myshop.bg/cd/Soulsville/JornHoel"/>
+        <cd:country>Norway</cd:country>
+        <cd:company>WEA</cd:company>
+        <cd:price>7.90</cd:price>
+        <cd:year>1996</cd:year>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.myshop.bg/cd/Soulsville/JornHoel#">
+        <cd:name>Jorn Hoel</cd:name>
+        <cd:country>Norway</cd:country>
+        <cd:born>dd-mm-yyyy</cd:born>
+        <cd:style>...</cd:style>
+        <cd:homepage>...</cd:homepage>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://www.myshop.bg/cd/Unchainmyheart"> 
+      <cd:artistrdf:resource="http://www.myshop.bg/cd/Unchainmyheart/JoeCocker"/> 
+      <cd:country>USA</cd:country> 
+      <cd:company>EMI</cd:company> 
+      <cd:price>8.20</cd:price> 
+      <cd:year>1987</cd:year> 
+   </rdf:Description> 
+   <rdf:Description rdf:about="http://www.myshop.bg/cd/Unchainmyheart/JoeCocker#">
+        <cd:name>Joe Cocker</cd:name>
+        <cd:country>USA</cd:country>
+        <cd:born>dd-mm-yyyy</cd:born>
+        <cd:style>...</cd:style>
+        <cd:homepage>...</cd:homepage>
+    </rdf:Description>
+
+   <rdf:Description rdf:about="http://www.myshop.bg/cd/PavarottiGalaConcert"> 
+      <cd:artistrdf:resource="http://www.myshop.bg/cd/PavarottiGalaConcert/LucianoPavarotti"/> 
+      <cd:country>UK</cd:country> 
+      <cd:company>DECCA</cd:company> 
+      <cd:price>9.90</cd:price> 
+      <cd:year>1991</cd:year> 
+   </rdf:Description> 
+   <rdf:Description rdf:about="http://www.myshop.bg/cd/PavarottiGalaConcert/LucianoPavarotti#">
+        <cd:name>Luciano Pavarotti</cd:name>
+        <cd:country>UK</cd:country>
+        <cd:born>dd-mm-yyyy</cd:born>
+        <cd:style>...</cd:style>
+        <cd:homepage>...</cd:homepage>
+    </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cd="http://www.myshop.bg/cd#">
+    <rdf:Description rdf:about="http://www.myshop.bg/cd/Soulsville#" 
+                    cd:artist="http://www.myshop.bg/cd/Soulsville/JornHoel"
+                    cd:country="http://www.myshop.bg/cd/Soulsville/Norway"
+                    cd:company="http://www.myshop.bg/cd/Soulsville/WEA"
+                    cd:price="http://www.myshop.bg/cd/Soulsville/7.90"
+                    cd:year="http://www.myshop.bg/cd/Soulsville/1996"
+    />
+    <rdf:Description rdf:about="http://www.myshop.bg/cd/Unchainmyheart#" 
+                    cd:artist="http://www.myshop.bg/cd/Unchainmyheart/JoeCocker"
+                    cd:country="http://www.myshop.bg/cd/Unchainmyheart/USA"
+                    cd:company="http://www.myshop.bg/cd/Unchainmyheart/EMI"
+                    cd:price="http://www.myshop.bg/cd/Unchainmyheart/8.20"
+                    cd:year="http://www.myshop.bg/cd/Unchainmyheart/1987"
+    />
+    <rdf:Description rdf:about="http://www.myshop.bg/cd/PavarottiGalaConcert#" 
+                    cd:artist="http://www.myshop.bg/cd/PavarottiGalaConcert/LucianoPavarotti"
+                    cd:country="http://www.myshop.bg/cd/PavarottiGalaConcert/UK"
+                    cd:company="http://www.myshop.bg/cd/PavarottiGalaConcert/DECCA"
+                    cd:price="http://www.myshop.bg/cd/PavarottiGalaConcert/9.90"
+                    cd:year="http://www.myshop.bg/cd/PavarottiGalaConcert/1991"
+    />
+</rdf:RDF>

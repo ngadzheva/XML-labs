@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cd="http://www.myshop.bg/cd#">
+    <rdf:Description rdf:about="http://www.myshop.bg/cd/Soulsville#">
+        <cd:artist>Jorn Hoel</cd:artist>
+        <cd:country>Norway</cd:country>
+        <cd:company>WEA</cd:company>
+        <cd:price>7.90</cd:price>
+        <cd:year>1996</cd:year>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.myshop.bg/cd/Unchainmyheart"> 
+      <cd:artist>Joe Cocker</cd:artist> 
+      <cd:country>USA</cd:country> 
+      <cd:company>EMI</cd:company> 
+      <cd:price>8.20</cd:price> 
+      <cd:year>1987</cd:year> 
+   </rdf:Description> 
+   <rdf:Description rdf:about="http://www.myshop.bg/cd/PavarottiGalaConcert"> 
+      <cd:artist>Luciano Pavarotti</cd:artist> 
+      <cd:country>UK</cd:country> 
+      <cd:company>DECCA</cd:company> 
+      <cd:price>9.90</cd:price> 
+      <cd:year>1991</cd:year> 
+   </rdf:Description> 
+</rdf:RDF>
